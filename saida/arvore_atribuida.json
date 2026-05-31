@@ -1,0 +1,881 @@
+{
+  "no": "Programa",
+  "linha": 1,
+  "instrucoes": [
+    {
+      "no": "OperacaoBinaria",
+      "linha": 10,
+      "tipo": "int",
+      "operador": "+",
+      "esquerda": {
+        "no": "LiteralInteiro",
+        "linha": 10,
+        "tipo": "int",
+        "valor": 10,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 10.0
+        }
+      },
+      "direita": {
+        "no": "LiteralInteiro",
+        "linha": 10,
+        "tipo": "int",
+        "valor": 3,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 3.0
+        }
+      },
+      "meta": {
+        "categoria": "aritmetico",
+        "registrador": "d0",
+        "operador": "+"
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 11,
+      "tipo": "int",
+      "operador": "-",
+      "esquerda": {
+        "no": "LiteralInteiro",
+        "linha": 11,
+        "tipo": "int",
+        "valor": 10,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 10.0
+        }
+      },
+      "direita": {
+        "no": "LiteralInteiro",
+        "linha": 11,
+        "tipo": "int",
+        "valor": 3,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 3.0
+        }
+      },
+      "meta": {
+        "categoria": "aritmetico",
+        "registrador": "d0",
+        "operador": "-"
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 12,
+      "tipo": "int",
+      "operador": "*",
+      "esquerda": {
+        "no": "LiteralInteiro",
+        "linha": 12,
+        "tipo": "int",
+        "valor": 4,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 4.0
+        }
+      },
+      "direita": {
+        "no": "LiteralInteiro",
+        "linha": 12,
+        "tipo": "int",
+        "valor": 3,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 3.0
+        }
+      },
+      "meta": {
+        "categoria": "aritmetico",
+        "registrador": "d0",
+        "operador": "*"
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 13,
+      "tipo": "int",
+      "operador": "/",
+      "esquerda": {
+        "no": "LiteralInteiro",
+        "linha": 13,
+        "tipo": "int",
+        "valor": 10,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 10.0
+        }
+      },
+      "direita": {
+        "no": "LiteralInteiro",
+        "linha": 13,
+        "tipo": "int",
+        "valor": 3,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 3.0
+        }
+      },
+      "meta": {
+        "categoria": "aritmetico",
+        "registrador": "d0",
+        "operador": "/"
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 14,
+      "tipo": "int",
+      "operador": "%",
+      "esquerda": {
+        "no": "LiteralInteiro",
+        "linha": 14,
+        "tipo": "int",
+        "valor": 10,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 10.0
+        }
+      },
+      "direita": {
+        "no": "LiteralInteiro",
+        "linha": 14,
+        "tipo": "int",
+        "valor": 3,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 3.0
+        }
+      },
+      "meta": {
+        "categoria": "aritmetico",
+        "registrador": "d0",
+        "operador": "%"
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 15,
+      "tipo": "int",
+      "operador": "^",
+      "esquerda": {
+        "no": "LiteralInteiro",
+        "linha": 15,
+        "tipo": "int",
+        "valor": 2,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 2.0
+        }
+      },
+      "direita": {
+        "no": "LiteralInteiro",
+        "linha": 15,
+        "tipo": "int",
+        "valor": 5,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 5.0
+        }
+      },
+      "meta": {
+        "categoria": "aritmetico",
+        "registrador": "d0",
+        "operador": "^"
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 18,
+      "tipo": "real",
+      "operador": "|",
+      "esquerda": {
+        "no": "LiteralReal",
+        "linha": 18,
+        "tipo": "real",
+        "valor": 7.5,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 7.5
+        }
+      },
+      "direita": {
+        "no": "LiteralReal",
+        "linha": 18,
+        "tipo": "real",
+        "valor": 2.5,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 2.5
+        }
+      },
+      "meta": {
+        "categoria": "aritmetico",
+        "registrador": "d0",
+        "operador": "|"
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 19,
+      "tipo": "real",
+      "operador": "+",
+      "esquerda": {
+        "no": "OperacaoBinaria",
+        "linha": 19,
+        "tipo": "real",
+        "operador": "*",
+        "esquerda": {
+          "no": "LiteralReal",
+          "linha": 19,
+          "tipo": "real",
+          "valor": 1.5,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 1.5
+          }
+        },
+        "direita": {
+          "no": "LiteralReal",
+          "linha": 19,
+          "tipo": "real",
+          "valor": 2.0,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 2.0
+          }
+        },
+        "meta": {
+          "categoria": "aritmetico",
+          "registrador": "d0",
+          "operador": "*"
+        }
+      },
+      "direita": {
+        "no": "LiteralReal",
+        "linha": 19,
+        "tipo": "real",
+        "valor": 3.0,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 3.0
+        }
+      },
+      "meta": {
+        "categoria": "aritmetico",
+        "registrador": "d0",
+        "operador": "+"
+      }
+    },
+    {
+      "no": "EscritaMemoria",
+      "linha": 22,
+      "tipo": "int",
+      "nome": "CONT",
+      "valor": {
+        "no": "LiteralInteiro",
+        "linha": 22,
+        "tipo": "int",
+        "valor": 5,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 5.0
+        }
+      },
+      "meta": {
+        "categoria": "escrita",
+        "registrador": "d0",
+        "rotulo_mem": "mem_CONT",
+        "simbolo": {
+          "nome": "CONT",
+          "tipo": "int",
+          "linha_definicao": 22
+        }
+      }
+    },
+    {
+      "no": "LeituraMemoria",
+      "linha": 23,
+      "tipo": "int",
+      "nome": "CONT",
+      "meta": {
+        "categoria": "leitura",
+        "registrador": "d0",
+        "rotulo_mem": "mem_CONT",
+        "simbolo": {
+          "nome": "CONT",
+          "tipo": "int",
+          "linha_definicao": 22
+        }
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 24,
+      "tipo": "int",
+      "operador": "*",
+      "esquerda": {
+        "no": "LeituraMemoria",
+        "linha": 24,
+        "tipo": "int",
+        "nome": "CONT",
+        "meta": {
+          "categoria": "leitura",
+          "registrador": "d0",
+          "rotulo_mem": "mem_CONT",
+          "simbolo": {
+            "nome": "CONT",
+            "tipo": "int",
+            "linha_definicao": 22
+          }
+        }
+      },
+      "direita": {
+        "no": "LiteralInteiro",
+        "linha": 24,
+        "tipo": "int",
+        "valor": 2,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 2.0
+        }
+      },
+      "meta": {
+        "categoria": "aritmetico",
+        "registrador": "d0",
+        "operador": "*"
+      }
+    },
+    {
+      "no": "ResultadoAnterior",
+      "linha": 25,
+      "tipo": "int",
+      "n": 2,
+      "meta": {
+        "categoria": "historico",
+        "registrador": "d0",
+        "n": 2
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 28,
+      "tipo": "bool",
+      "operador": ">",
+      "esquerda": {
+        "no": "LeituraMemoria",
+        "linha": 28,
+        "tipo": "int",
+        "nome": "CONT",
+        "meta": {
+          "categoria": "leitura",
+          "registrador": "d0",
+          "rotulo_mem": "mem_CONT",
+          "simbolo": {
+            "nome": "CONT",
+            "tipo": "int",
+            "linha_definicao": 22
+          }
+        }
+      },
+      "direita": {
+        "no": "LiteralInteiro",
+        "linha": 28,
+        "tipo": "int",
+        "valor": 0,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 0.0
+        }
+      },
+      "meta": {
+        "categoria": "relacional",
+        "registrador": "d0",
+        "operador": ">"
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 29,
+      "tipo": "bool",
+      "operador": "OR",
+      "esquerda": {
+        "no": "LiteralBool",
+        "linha": 29,
+        "tipo": "bool",
+        "valor": true,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 1.0
+        }
+      },
+      "direita": {
+        "no": "LiteralBool",
+        "linha": 29,
+        "tipo": "bool",
+        "valor": false,
+        "meta": {
+          "categoria": "literal",
+          "registrador": "d0",
+          "valor_double": 0.0
+        }
+      },
+      "meta": {
+        "categoria": "logico",
+        "registrador": "d0",
+        "operador": "OR"
+      }
+    },
+    {
+      "no": "OperacaoBinaria",
+      "linha": 30,
+      "tipo": "bool",
+      "operador": "AND",
+      "esquerda": {
+        "no": "OperacaoBinaria",
+        "linha": 30,
+        "tipo": "bool",
+        "operador": ">",
+        "esquerda": {
+          "no": "LeituraMemoria",
+          "linha": 30,
+          "tipo": "int",
+          "nome": "CONT",
+          "meta": {
+            "categoria": "leitura",
+            "registrador": "d0",
+            "rotulo_mem": "mem_CONT",
+            "simbolo": {
+              "nome": "CONT",
+              "tipo": "int",
+              "linha_definicao": 22
+            }
+          }
+        },
+        "direita": {
+          "no": "LiteralInteiro",
+          "linha": 30,
+          "tipo": "int",
+          "valor": 0,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 0.0
+          }
+        },
+        "meta": {
+          "categoria": "relacional",
+          "registrador": "d0",
+          "operador": ">"
+        }
+      },
+      "direita": {
+        "no": "OperacaoBinaria",
+        "linha": 30,
+        "tipo": "bool",
+        "operador": "<",
+        "esquerda": {
+          "no": "LeituraMemoria",
+          "linha": 30,
+          "tipo": "int",
+          "nome": "CONT",
+          "meta": {
+            "categoria": "leitura",
+            "registrador": "d0",
+            "rotulo_mem": "mem_CONT",
+            "simbolo": {
+              "nome": "CONT",
+              "tipo": "int",
+              "linha_definicao": 22
+            }
+          }
+        },
+        "direita": {
+          "no": "LiteralInteiro",
+          "linha": 30,
+          "tipo": "int",
+          "valor": 100,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 100.0
+          }
+        },
+        "meta": {
+          "categoria": "relacional",
+          "registrador": "d0",
+          "operador": "<"
+        }
+      },
+      "meta": {
+        "categoria": "logico",
+        "registrador": "d0",
+        "operador": "AND"
+      }
+    },
+    {
+      "no": "OperacaoUnaria",
+      "linha": 31,
+      "tipo": "bool",
+      "operador": "NOT",
+      "operando": {
+        "no": "OperacaoBinaria",
+        "linha": 31,
+        "tipo": "bool",
+        "operador": "OR",
+        "esquerda": {
+          "no": "LiteralBool",
+          "linha": 31,
+          "tipo": "bool",
+          "valor": true,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 1.0
+          }
+        },
+        "direita": {
+          "no": "LiteralBool",
+          "linha": 31,
+          "tipo": "bool",
+          "valor": false,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 0.0
+          }
+        },
+        "meta": {
+          "categoria": "logico",
+          "registrador": "d0",
+          "operador": "OR"
+        }
+      },
+      "meta": {
+        "categoria": "logica",
+        "registrador": "d0",
+        "operador": "NOT"
+      }
+    },
+    {
+      "no": "Se",
+      "linha": 34,
+      "tipo": "int",
+      "condicao": {
+        "no": "OperacaoBinaria",
+        "linha": 34,
+        "tipo": "bool",
+        "operador": "==",
+        "esquerda": {
+          "no": "LeituraMemoria",
+          "linha": 34,
+          "tipo": "int",
+          "nome": "CONT",
+          "meta": {
+            "categoria": "leitura",
+            "registrador": "d0",
+            "rotulo_mem": "mem_CONT",
+            "simbolo": {
+              "nome": "CONT",
+              "tipo": "int",
+              "linha_definicao": 22
+            }
+          }
+        },
+        "direita": {
+          "no": "LiteralInteiro",
+          "linha": 34,
+          "tipo": "int",
+          "valor": 0,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 0.0
+          }
+        },
+        "meta": {
+          "categoria": "relacional",
+          "registrador": "d0",
+          "operador": "=="
+        }
+      },
+      "entao": {
+        "no": "EscritaMemoria",
+        "linha": 34,
+        "tipo": "int",
+        "nome": "RESULT",
+        "valor": {
+          "no": "LiteralInteiro",
+          "linha": 34,
+          "tipo": "int",
+          "valor": 42,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 42.0
+          }
+        },
+        "meta": {
+          "categoria": "escrita",
+          "registrador": "d0",
+          "rotulo_mem": "mem_RESULT",
+          "simbolo": {
+            "nome": "RESULT",
+            "tipo": "int",
+            "linha_definicao": 34
+          }
+        }
+      },
+      "meta": {
+        "categoria": "controle_se",
+        "registrador": "d0",
+        "rotulos": {
+          "fim": "L_if_fim_1"
+        }
+      }
+    },
+    {
+      "no": "SeSenao",
+      "linha": 35,
+      "tipo": "int",
+      "condicao": {
+        "no": "OperacaoBinaria",
+        "linha": 35,
+        "tipo": "bool",
+        "operador": ">=",
+        "esquerda": {
+          "no": "LeituraMemoria",
+          "linha": 35,
+          "tipo": "int",
+          "nome": "CONT",
+          "meta": {
+            "categoria": "leitura",
+            "registrador": "d0",
+            "rotulo_mem": "mem_CONT",
+            "simbolo": {
+              "nome": "CONT",
+              "tipo": "int",
+              "linha_definicao": 22
+            }
+          }
+        },
+        "direita": {
+          "no": "LiteralInteiro",
+          "linha": 35,
+          "tipo": "int",
+          "valor": 5,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 5.0
+          }
+        },
+        "meta": {
+          "categoria": "relacional",
+          "registrador": "d0",
+          "operador": ">="
+        }
+      },
+      "entao": {
+        "no": "EscritaMemoria",
+        "linha": 35,
+        "tipo": "int",
+        "nome": "FLAG",
+        "valor": {
+          "no": "LiteralInteiro",
+          "linha": 35,
+          "tipo": "int",
+          "valor": 1,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 1.0
+          }
+        },
+        "meta": {
+          "categoria": "escrita",
+          "registrador": "d0",
+          "rotulo_mem": "mem_FLAG",
+          "simbolo": {
+            "nome": "FLAG",
+            "tipo": "int",
+            "linha_definicao": 35
+          }
+        }
+      },
+      "senao": {
+        "no": "EscritaMemoria",
+        "linha": 35,
+        "tipo": "int",
+        "nome": "FLAG",
+        "valor": {
+          "no": "LiteralInteiro",
+          "linha": 35,
+          "tipo": "int",
+          "valor": 0,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 0.0
+          }
+        },
+        "meta": {
+          "categoria": "escrita",
+          "registrador": "d0",
+          "rotulo_mem": "mem_FLAG",
+          "simbolo": {
+            "nome": "FLAG",
+            "tipo": "int",
+            "linha_definicao": 35
+          }
+        }
+      },
+      "meta": {
+        "categoria": "controle_se_senao",
+        "registrador": "d0",
+        "rotulos": {
+          "senao": "L_else_2",
+          "fim": "L_ifelse_fim_2"
+        }
+      }
+    },
+    {
+      "no": "Enquanto",
+      "linha": 36,
+      "tipo": "unit",
+      "condicao": {
+        "no": "OperacaoBinaria",
+        "linha": 36,
+        "tipo": "bool",
+        "operador": ">",
+        "esquerda": {
+          "no": "LeituraMemoria",
+          "linha": 36,
+          "tipo": "int",
+          "nome": "CONT",
+          "meta": {
+            "categoria": "leitura",
+            "registrador": "d0",
+            "rotulo_mem": "mem_CONT",
+            "simbolo": {
+              "nome": "CONT",
+              "tipo": "int",
+              "linha_definicao": 22
+            }
+          }
+        },
+        "direita": {
+          "no": "LiteralInteiro",
+          "linha": 36,
+          "tipo": "int",
+          "valor": 0,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 0.0
+          }
+        },
+        "meta": {
+          "categoria": "relacional",
+          "registrador": "d0",
+          "operador": ">"
+        }
+      },
+      "corpo": {
+        "no": "EscritaMemoria",
+        "linha": 36,
+        "tipo": "int",
+        "nome": "CONT",
+        "valor": {
+          "no": "OperacaoBinaria",
+          "linha": 36,
+          "tipo": "int",
+          "operador": "-",
+          "esquerda": {
+            "no": "LeituraMemoria",
+            "linha": 36,
+            "tipo": "int",
+            "nome": "CONT",
+            "meta": {
+              "categoria": "leitura",
+              "registrador": "d0",
+              "rotulo_mem": "mem_CONT",
+              "simbolo": {
+                "nome": "CONT",
+                "tipo": "int",
+                "linha_definicao": 22
+              }
+            }
+          },
+          "direita": {
+            "no": "LiteralInteiro",
+            "linha": 36,
+            "tipo": "int",
+            "valor": 1,
+            "meta": {
+              "categoria": "literal",
+              "registrador": "d0",
+              "valor_double": 1.0
+            }
+          },
+          "meta": {
+            "categoria": "aritmetico",
+            "registrador": "d0",
+            "operador": "-"
+          }
+        },
+        "meta": {
+          "categoria": "escrita",
+          "registrador": "d0",
+          "rotulo_mem": "mem_CONT",
+          "simbolo": {
+            "nome": "CONT",
+            "tipo": "int",
+            "linha_definicao": 22
+          }
+        }
+      },
+      "meta": {
+        "categoria": "controle_enquanto",
+        "registrador": "d0",
+        "rotulos": {
+          "inicio": "L_while_ini_3",
+          "fim": "L_while_fim_3"
+        }
+      }
+    }
+  ],
+  "meta": {
+    "memorias": [
+      "CONT",
+      "FLAG",
+      "RESULT"
+    ],
+    "n_instrucoes": 19
+  }
+}
