@@ -1,0 +1,18 @@
+[project]
+name = "ra3-17-analisador-semantico"
+version = "3.0.0"
+description = "Analisador semântico (Fase 3) de uma linguagem RPN tipada, com geração de Assembly ARMv7 para o Cpulator DEC1-SOC."
+requires-python = ">=3.10"
+authors = [
+    { name = "Pedro Alessandrini Braiti" },
+    { name = "Thiago Aguiar" },
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
