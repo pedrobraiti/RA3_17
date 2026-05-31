@@ -1,0 +1,21 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+
+# Saída gerada pela última execução (artefatos versionados manualmente quando exigido)
+# Mantemos os artefatos da última execução exigidos pelo enunciado, mas ignoramos lixo temporário.
+*.tmp
+*.log
+
+# Editores / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
