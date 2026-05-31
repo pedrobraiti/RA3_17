@@ -1,0 +1,11 @@
+*{ Teste de ERRO LEXICO. O analisador deve abortar na primeira linha
+   problematica, com a mensagem de linha e coluna. Comente todas as linhas
+   de erro menos uma para isolar a mensagem desejada. }*
+(START)
+(3.14.5 2.0 +)      *{ numero malformado: dois pontos decimais }*
+*{ (10 3 &)         caractere invalido '&' }*
+*{ (3,5 2 +)        virgula no lugar do ponto decimal }*
+*{ (mem 2 +)        identificador minusculo }*
+*{ (10 = 3)         operador '=' isolado (use '==') }*
+*{ (.5 2 +)         ponto sem digito antes }*
+(END)

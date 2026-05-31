@@ -1,0 +1,24 @@
+*{ Teste 3 - valido. Combina comentarios em todas as posicoes, variaveis
+   booleanas, aninhamento crescente e todas as estruturas de controle. }*
+(START)
+*{ aritmetica e tipos basicos }*
+(8 *{ entre tokens }* 2 +)        *{ 10 }*
+(8 2 -)                            *{ 6 }*
+(8 2 *)                            *{ 16 }*
+(17 5 /)                           *{ 3 }*
+(17 5 %)                           *{ 2 }*
+(2 8 ^)                            *{ 256 }*
+((9.0 2.0 |) (3.0 1.0 -) *)        *{ real aninhado -> 4.5*2.0 = 9.0 }*
+*{ variavel booleana: ATIVO recebe um bool }*
+((10 5 >) ATIVO)                   *{ ATIVO : bool }*
+((ATIVO) NOT)                      *{ le e nega o bool }*
+(((ATIVO) (TRUE) AND) (FALSE) OR)  *{ logica aninhada com a variavel bool }*
+(7 ACUM)                           *{ ACUM : int }*
+*{ laco: acumula enquanto ACUM positivo }*
+(((ACUM) 0 >) (((ACUM) 2 -) ACUM) WHILE)
+*{ decisao simples e decisao com dois ramos }*
+(((ACUM) 0 <=) ((ACUM) 1 +) IF)
+((ATIVO) (1 X) (2 X) IFELSE)
+(2 RES)                            *{ historico }*
+((ACUM))                           *{ leitura de memoria (MEM) }*
+(END)
