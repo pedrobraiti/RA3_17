@@ -1,0 +1,21 @@
+*{ Teste 2 - valido. Enfase em numeros reais e num laco com contador real,
+   mantendo as operacoes inteiras (/ % ^) sobre inteiros (tipos fortes). }*
+(START)
+(100 7 /)                    *{ divisao inteira -> 14 }*
+(100 7 %)                    *{ resto -> 2 }*
+(3 4 ^)                      *{ potencia -> 81 }*
+(2 3 +)                      *{ 5 : int }*
+(9 4 -)                      *{ 5 }*
+(6 7 *)                      *{ 42 }*
+(10.0 4.0 |)                 *{ divisao real -> 2.5 }*
+((2.5 2.0 *) (1.0 3.0 +) |)  *{ aninhamento real -> 1.25 }*
+(3.0 SALDO)                  *{ define SALDO : real }*
+((SALDO) 1.5 +)              *{ usa SALDO (real) }*
+(1 RES)                      *{ historico: instrucao anterior }*
+*{ laco com contador REAL: decrementa SALDO ate <= 0 }*
+(((SALDO) 0.0 >) (((SALDO) 1.0 -) SALDO) WHILE)
+*{ decisao com logica booleana composta }*
+(((100 7 %) 0 >) (TRUE FALSE OR) AND)
+(((SALDO) 0.0 <=) (1 PRONTO) (0 PRONTO) IFELSE)
+(((2 3 +) 4 ==) (1 IGUAL) IF)
+(END)

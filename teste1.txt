@@ -1,0 +1,37 @@
+*{ ============================================================
+   Teste 1 - programa semanticamente VALIDO e completo.
+   Cobre: + - * | / % ^, relacionais, AND/OR/NOT, (V MEM), (MEM),
+   (N RES), IF, IFELSE, WHILE e os tres tipos (int, real, bool).
+   Comentarios aparecem em linha inteira, no fim de linha e entre tokens.
+   ============================================================ }*
+(START)
+
+*{ ---- aritmetica inteira ---- }*
+(10 3 +)                 *{ 13 : int }*
+(10 3 -)                 *{ 7 }*
+(4 3 *)                  *{ 12 }*
+(10 3 /)                 *{ 3  : divisao inteira }*
+(10 3 %)                 *{ 1  : resto inteiro }*
+(2 5 ^)                  *{ 32 : potencia }*
+
+*{ ---- aritmetica real (tipos fortes: real opera com real) ---- }*
+(7.5 2.5 |)              *{ 3.0 : divisao real }*
+((1.5 2.0 *) 3.0 +)      *{ aninhamento real -> 6.0 }*
+
+*{ ---- memoria e historico ---- }*
+(5 CONT)                 *{ define CONT : int }*
+(CONT)                   *{ le CONT (comando (MEM)) }*
+((CONT) 2 *)             *{ usa CONT em expressao }*
+(2 RES)                  *{ resultado de 2 instrucoes atras }*
+
+*{ ---- booleanos e operacoes logicas ---- }*
+((CONT) 0 >)             *{ relacional -> bool }*
+(TRUE FALSE OR)          *{ literais logicos -> bool }*
+(((CONT) 0 >) ((CONT) 100 <) AND)   *{ logica aninhada -> bool }*
+((TRUE FALSE OR) NOT)    *{ negacao logica -> bool }*
+
+*{ ---- decisao e repeticao ---- }*
+(((CONT) 0 ==) (42 RESULT) IF)                 *{ IF: corpo int }*
+(((CONT) 5 >=) (1 FLAG) (0 FLAG) IFELSE)       *{ IFELSE: ramos int }*
+(((CONT) 0 >) (((CONT) 1 -) CONT) WHILE)       *{ WHILE: decrementa CONT }*
+(END)
