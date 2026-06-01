@@ -248,9 +248,11 @@ class _Emissor:
         return "\n".join(self.linhas) + "\n"
 
     def _cabecalho(self) -> None:
-        self._add(".syntax unified")
-        self._add(".cpu cortex-a9")
-        self._add(".fpu vfpv3")
+        # O Cpulator já fixa CPU/FPU pela linha de comando do montador
+        # (-mcpu=cortex-a9 -mfpu=neon-fp16); as diretivas .syntax/.cpu/.fpu no
+        # arquivo são redundantes e o montador do Cpulator rejeita `.syntax`.
+        # Mantemos só o mínimo, e as instruções VFP usadas não exigem
+        # `.syntax unified` em modo ARM.
         self._add(".global _start")
         self._add()
         self._add(".text")

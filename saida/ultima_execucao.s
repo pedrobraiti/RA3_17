@@ -1,6 +1,3 @@
-.syntax unified
-.cpu cortex-a9
-.fpu vfpv3
 .global _start
 
 .text
