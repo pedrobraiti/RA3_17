@@ -5,7 +5,7 @@
 
 .text
 _start:
-    @ ---- instrução 1 (linha 10) ----
+    @ ---- instrução 1 (linha 8) ----
     LDR r0, =const_0
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
@@ -28,7 +28,7 @@ _start:
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 2 (linha 11) ----
+    @ ---- instrução 2 (linha 9) ----
     LDR r0, =const_0
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
@@ -51,12 +51,12 @@ _start:
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 3 (linha 12) ----
+    @ ---- instrução 3 (linha 10) ----
     LDR r0, =const_2
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
-    LDR r0, =const_1
+    LDR r0, =const_3
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
@@ -74,12 +74,12 @@ _start:
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 4 (linha 13) ----
+    @ ---- instrução 4 (linha 11) ----
     LDR r0, =const_0
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
-    LDR r0, =const_1
+    LDR r0, =const_2
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
@@ -97,12 +97,12 @@ _start:
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 5 (linha 14) ----
+    @ ---- instrução 5 (linha 12) ----
     LDR r0, =const_0
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
-    LDR r0, =const_1
+    LDR r0, =const_2
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
@@ -120,12 +120,12 @@ _start:
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 6 (linha 15) ----
-    LDR r0, =const_3
+    @ ---- instrução 6 (linha 13) ----
+    LDR r0, =const_4
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
-    LDR r0, =const_4
+    LDR r0, =const_5
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
@@ -143,12 +143,12 @@ _start:
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 7 (linha 18) ----
-    LDR r0, =const_5
+    @ ---- instrução 7 (linha 16) ----
+    LDR r0, =const_6
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
-    LDR r0, =const_6
+    LDR r0, =const_5
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
@@ -166,198 +166,8 @@ _start:
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 8 (linha 19) ----
+    @ ---- instrução 8 (linha 17) ----
     LDR r0, =const_7
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    LDR r0, =const_3
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d1, r4, r5
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    VMUL.F64 d0, d0, d1
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    LDR r0, =const_1
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d1, r4, r5
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    VADD.F64 d0, d0, d1
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =resultado_7
-    VSTR.F64 d0, [r0]
-    VCVT.S32.F64 s0, d0
-    VMOV r0, s0
-    BL __exibir_hex
-    @ ---- instrução 9 (linha 22) ----
-    LDR r0, =const_4
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =mem_CONT
-    VSTR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =resultado_8
-    VSTR.F64 d0, [r0]
-    VCVT.S32.F64 s0, d0
-    VMOV r0, s0
-    BL __exibir_hex
-    @ ---- instrução 10 (linha 23) ----
-    LDR r0, =mem_CONT
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =resultado_9
-    VSTR.F64 d0, [r0]
-    VCVT.S32.F64 s0, d0
-    VMOV r0, s0
-    BL __exibir_hex
-    @ ---- instrução 11 (linha 24) ----
-    LDR r0, =mem_CONT
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    LDR r0, =const_3
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d1, r4, r5
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    VMUL.F64 d0, d0, d1
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =resultado_10
-    VSTR.F64 d0, [r0]
-    VCVT.S32.F64 s0, d0
-    VMOV r0, s0
-    BL __exibir_hex
-    @ ---- instrução 12 (linha 25) ----
-    LDR r0, =resultado_9
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =resultado_11
-    VSTR.F64 d0, [r0]
-    VCVT.S32.F64 s0, d0
-    VMOV r0, s0
-    BL __exibir_hex
-    @ ---- instrução 13 (linha 28) ----
-    LDR r0, =mem_CONT
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    LDR r0, =const_zero
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d1, r4, r5
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    VCMP.F64 d0, d1
-    VMRS APSR_nzcv, FPSCR
-    BGT L_cmp_v_1
-    LDR r0, =const_zero
-    VLDR.F64 d0, [r0]
-    B L_cmp_f_2
-L_cmp_v_1:
-    LDR r0, =const_one
-    VLDR.F64 d0, [r0]
-L_cmp_f_2:
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =resultado_12
-    VSTR.F64 d0, [r0]
-    VCVT.S32.F64 s0, d0
-    VMOV r0, s0
-    BL __exibir_hex
-    @ ---- instrução 14 (linha 29) ----
-    LDR r0, =const_one
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    LDR r0, =const_zero
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d1, r4, r5
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    VADD.F64 d0, d0, d1
-    LDR r0, =const_zero
-    VLDR.F64 d1, [r0]
-    VCMP.F64 d0, d1
-    VMRS APSR_nzcv, FPSCR
-    BNE L_bool_v_3
-    LDR r0, =const_zero
-    VLDR.F64 d0, [r0]
-    B L_bool_f_4
-L_bool_v_3:
-    LDR r0, =const_one
-    VLDR.F64 d0, [r0]
-L_bool_f_4:
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =resultado_13
-    VSTR.F64 d0, [r0]
-    VCVT.S32.F64 s0, d0
-    VMOV r0, s0
-    BL __exibir_hex
-    @ ---- instrução 15 (linha 30) ----
-    LDR r0, =mem_CONT
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    LDR r0, =const_zero
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d1, r4, r5
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    VCMP.F64 d0, d1
-    VMRS APSR_nzcv, FPSCR
-    BGT L_cmp_v_5
-    LDR r0, =const_zero
-    VLDR.F64 d0, [r0]
-    B L_cmp_f_6
-L_cmp_v_5:
-    LDR r0, =const_one
-    VLDR.F64 d0, [r0]
-L_cmp_f_6:
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    LDR r0, =mem_CONT
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
@@ -369,16 +179,63 @@ L_cmp_f_6:
     VMOV d1, r4, r5
     POP {r4, r5}
     VMOV d0, r4, r5
-    VCMP.F64 d0, d1
-    VMRS APSR_nzcv, FPSCR
-    BLT L_cmp_v_7
-    LDR r0, =const_zero
+    VADD.F64 d0, d0, d1
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    LDR r0, =const_9
     VLDR.F64 d0, [r0]
-    B L_cmp_f_8
-L_cmp_v_7:
-    LDR r0, =const_one
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    LDR r0, =const_7
     VLDR.F64 d0, [r0]
-L_cmp_f_8:
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d1, r4, r5
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    VMUL.F64 d0, d0, d1
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d1, r4, r5
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    VDIV.F64 d0, d0, d1
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =resultado_7
+    VSTR.F64 d0, [r0]
+    VCVT.S32.F64 s0, d0
+    VMOV r0, s0
+    BL __exibir_hex
+    @ ---- instrução 9 (linha 20) ----
+    LDR r0, =const_10
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =mem_PECAS
+    VSTR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =resultado_8
+    VSTR.F64 d0, [r0]
+    VCVT.S32.F64 s0, d0
+    VMOV r0, s0
+    BL __exibir_hex
+    @ ---- instrução 10 (linha 21) ----
+    LDR r0, =mem_PECAS
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    LDR r0, =const_1
+    VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
@@ -390,17 +247,124 @@ L_cmp_f_8:
     PUSH {r4, r5}
     POP {r4, r5}
     VMOV d0, r4, r5
-    LDR r0, =resultado_14
+    LDR r0, =resultado_9
     VSTR.F64 d0, [r0]
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 16 (linha 31) ----
+    @ ---- instrução 11 (linha 22) ----
+    LDR r0, =resultado_8
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =resultado_10
+    VSTR.F64 d0, [r0]
+    VCVT.S32.F64 s0, d0
+    VMOV r0, s0
+    BL __exibir_hex
+    @ ---- instrução 12 (linha 25) ----
+    LDR r0, =mem_PECAS
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    LDR r0, =const_11
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d1, r4, r5
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    VCMP.F64 d0, d1
+    VMRS APSR_nzcv, FPSCR
+    BGE L_cmp_v_1
+    LDR r0, =const_zero
+    VLDR.F64 d0, [r0]
+    B L_cmp_f_2
+L_cmp_v_1:
     LDR r0, =const_one
+    VLDR.F64 d0, [r0]
+L_cmp_f_2:
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =resultado_11
+    VSTR.F64 d0, [r0]
+    VCVT.S32.F64 s0, d0
+    VMOV r0, s0
+    BL __exibir_hex
+    @ ---- instrução 13 (linha 26) ----
+    LDR r0, =mem_PECAS
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
     LDR r0, =const_zero
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d1, r4, r5
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    VCMP.F64 d0, d1
+    VMRS APSR_nzcv, FPSCR
+    BGT L_cmp_v_3
+    LDR r0, =const_zero
+    VLDR.F64 d0, [r0]
+    B L_cmp_f_4
+L_cmp_v_3:
+    LDR r0, =const_one
+    VLDR.F64 d0, [r0]
+L_cmp_f_4:
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    LDR r0, =mem_PECAS
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    LDR r0, =const_12
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d1, r4, r5
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    VCMP.F64 d0, d1
+    VMRS APSR_nzcv, FPSCR
+    BLE L_cmp_v_5
+    LDR r0, =const_zero
+    VLDR.F64 d0, [r0]
+    B L_cmp_f_6
+L_cmp_v_5:
+    LDR r0, =const_one
+    VLDR.F64 d0, [r0]
+L_cmp_f_6:
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d1, r4, r5
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    VMUL.F64 d0, d0, d1
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =resultado_12
+    VSTR.F64 d0, [r0]
+    VCVT.S32.F64 s0, d0
+    VMOV r0, s0
+    BL __exibir_hex
+    @ ---- instrução 14 (linha 27) ----
+    LDR r0, =const_zero
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    LDR r0, =const_one
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
@@ -413,14 +377,14 @@ L_cmp_f_8:
     VLDR.F64 d1, [r0]
     VCMP.F64 d0, d1
     VMRS APSR_nzcv, FPSCR
-    BNE L_bool_v_9
+    BNE L_bool_v_7
     LDR r0, =const_zero
     VLDR.F64 d0, [r0]
-    B L_bool_f_10
-L_bool_v_9:
+    B L_bool_f_8
+L_bool_v_7:
     LDR r0, =const_one
     VLDR.F64 d0, [r0]
-L_bool_f_10:
+L_bool_f_8:
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
@@ -432,17 +396,17 @@ L_bool_f_10:
     PUSH {r4, r5}
     POP {r4, r5}
     VMOV d0, r4, r5
-    LDR r0, =resultado_15
+    LDR r0, =resultado_13
     VSTR.F64 d0, [r0]
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 17 (linha 34) ----
-    LDR r0, =mem_CONT
+    @ ---- instrução 15 (linha 28) ----
+    LDR r0, =mem_PECAS
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
-    LDR r0, =const_zero
+    LDR r0, =const_12
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
@@ -452,7 +416,46 @@ L_bool_f_10:
     VMOV d0, r4, r5
     VCMP.F64 d0, d1
     VMRS APSR_nzcv, FPSCR
-    BEQ L_cmp_v_11
+    BGT L_cmp_v_9
+    LDR r0, =const_zero
+    VLDR.F64 d0, [r0]
+    B L_cmp_f_10
+L_cmp_v_9:
+    LDR r0, =const_one
+    VLDR.F64 d0, [r0]
+L_cmp_f_10:
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =mem_ALERTA
+    VSTR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =resultado_14
+    VSTR.F64 d0, [r0]
+    VCVT.S32.F64 s0, d0
+    VMOV r0, s0
+    BL __exibir_hex
+    @ ---- instrução 16 (linha 31) ----
+L_while_ini_1:
+    LDR r0, =mem_PECAS
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    LDR r0, =const_13
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d1, r4, r5
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    VCMP.F64 d0, d1
+    VMRS APSR_nzcv, FPSCR
+    BLT L_cmp_v_11
     LDR r0, =const_zero
     VLDR.F64 d0, [r0]
     B L_cmp_f_12
@@ -468,37 +471,49 @@ L_cmp_f_12:
     VLDR.F64 d1, [r0]
     VCMP.F64 d0, d1
     VMRS APSR_nzcv, FPSCR
-    BEQ L_if_fim_1
-    LDR r0, =const_9
+    BEQ L_while_fim_1
+    LDR r0, =mem_PECAS
+    VLDR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    LDR r0, =const_14
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
+    VMOV d1, r4, r5
+    POP {r4, r5}
     VMOV d0, r4, r5
-    LDR r0, =mem_RESULT
+    VADD.F64 d0, d0, d1
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =mem_PECAS
     VSTR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
     VMOV d0, r4, r5
-L_if_fim_1:
+    B L_while_ini_1
+L_while_fim_1:
     LDR r0, =const_zero
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
     VMOV d0, r4, r5
-    LDR r0, =resultado_16
+    LDR r0, =resultado_15
     VSTR.F64 d0, [r0]
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 18 (linha 35) ----
-    LDR r0, =mem_CONT
+    @ ---- instrução 17 (linha 32) ----
+    LDR r0, =mem_PECAS
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
-    LDR r0, =const_4
+    LDR r0, =const_15
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
@@ -508,7 +523,7 @@ L_if_fim_1:
     VMOV d0, r4, r5
     VCMP.F64 d0, d1
     VMRS APSR_nzcv, FPSCR
-    BGE L_cmp_v_13
+    BEQ L_cmp_v_13
     LDR r0, =const_zero
     VLDR.F64 d0, [r0]
     B L_cmp_f_14
@@ -524,61 +539,34 @@ L_cmp_f_14:
     VLDR.F64 d1, [r0]
     VCMP.F64 d0, d1
     VMRS APSR_nzcv, FPSCR
-    BEQ L_else_2
-    LDR r0, =const_one
+    BEQ L_if_fim_2
+    LDR r0, =const_16
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
     VMOV d0, r4, r5
-    LDR r0, =mem_FLAG
+    LDR r0, =mem_FALTA
     VSTR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
-    B L_ifelse_fim_2
-L_else_2:
+    POP {r4, r5}
+    VMOV d0, r4, r5
+L_if_fim_2:
     LDR r0, =const_zero
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
     VMOV d0, r4, r5
-    LDR r0, =mem_FLAG
-    VSTR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-L_ifelse_fim_2:
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =resultado_17
+    LDR r0, =resultado_16
     VSTR.F64 d0, [r0]
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
     BL __exibir_hex
-    @ ---- instrução 19 (linha 36) ----
-L_while_ini_3:
-    LDR r0, =mem_CONT
+    @ ---- instrução 18 (linha 33) ----
+    LDR r0, =mem_ALERTA
     VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    LDR r0, =const_zero
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d1, r4, r5
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    VCMP.F64 d0, d1
-    VMRS APSR_nzcv, FPSCR
-    BGT L_cmp_v_15
-    LDR r0, =const_zero
-    VLDR.F64 d0, [r0]
-    B L_cmp_f_16
-L_cmp_v_15:
-    LDR r0, =const_one
-    VLDR.F64 d0, [r0]
-L_cmp_f_16:
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
@@ -587,39 +575,33 @@ L_cmp_f_16:
     VLDR.F64 d1, [r0]
     VCMP.F64 d0, d1
     VMRS APSR_nzcv, FPSCR
-    BEQ L_while_fim_3
-    LDR r0, =mem_CONT
-    VLDR.F64 d0, [r0]
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
+    BEQ L_else_3
     LDR r0, =const_one
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
-    VMOV d1, r4, r5
-    POP {r4, r5}
     VMOV d0, r4, r5
-    VSUB.F64 d0, d0, d1
-    VMOV r4, r5, d0
-    PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    LDR r0, =mem_CONT
+    LDR r0, =mem_STATUS
     VSTR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
-    POP {r4, r5}
-    VMOV d0, r4, r5
-    B L_while_ini_3
-L_while_fim_3:
+    B L_ifelse_fim_3
+L_else_3:
     LDR r0, =const_zero
     VLDR.F64 d0, [r0]
     VMOV r4, r5, d0
     PUSH {r4, r5}
     POP {r4, r5}
     VMOV d0, r4, r5
-    LDR r0, =resultado_18
+    LDR r0, =mem_STATUS
+    VSTR.F64 d0, [r0]
+    VMOV r4, r5, d0
+    PUSH {r4, r5}
+L_ifelse_fim_3:
+    POP {r4, r5}
+    VMOV d0, r4, r5
+    LDR r0, =resultado_17
     VSTR.F64 d0, [r0]
     VCVT.S32.F64 s0, d0
     VMOV r0, s0
@@ -771,19 +753,27 @@ __udiv10_fim:
 .align 3
 const_zero: .double 0.0
 const_one:  .double 1.0
-const_0: .double 10.0
-const_1: .double 3.0
-const_2: .double 4.0
-const_3: .double 2.0
-const_4: .double 5.0
-const_5: .double 7.5
-const_6: .double 2.5
-const_7: .double 1.5
-const_8: .double 100.0
-const_9: .double 42.0
-mem_CONT: .double 0.0
-mem_FLAG: .double 0.0
-mem_RESULT: .double 0.0
+const_0: .double 48.0
+const_1: .double 6.0
+const_2: .double 7.0
+const_3: .double 9.0
+const_4: .double 3.0
+const_5: .double 4.0
+const_6: .double 18.0
+const_7: .double 2.0
+const_8: .double 3.5
+const_9: .double 1.5
+const_10: .double 40.0
+const_11: .double 30.0
+const_12: .double 100.0
+const_13: .double 80.0
+const_14: .double 5.0
+const_15: .double 50.0
+const_16: .double 999.0
+mem_ALERTA: .double 0.0
+mem_FALTA: .double 0.0
+mem_PECAS: .double 0.0
+mem_STATUS: .double 0.0
 resultado_0: .double 0.0
 resultado_1: .double 0.0
 resultado_2: .double 0.0
@@ -802,7 +792,6 @@ resultado_14: .double 0.0
 resultado_15: .double 0.0
 resultado_16: .double 0.0
 resultado_17: .double 0.0
-resultado_18: .double 0.0
 
 @ tabela de 7 segmentos (dígitos 0-9) para os displays HEX
 __hex_tabela:
