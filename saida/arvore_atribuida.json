@@ -4,29 +4,29 @@
   "instrucoes": [
     {
       "no": "OperacaoBinaria",
-      "linha": 10,
+      "linha": 8,
       "tipo": "int",
       "operador": "+",
       "esquerda": {
         "no": "LiteralInteiro",
-        "linha": 10,
+        "linha": 8,
         "tipo": "int",
-        "valor": 10,
+        "valor": 48,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 10.0
+          "valor_double": 48.0
         }
       },
       "direita": {
         "no": "LiteralInteiro",
-        "linha": 10,
+        "linha": 8,
         "tipo": "int",
-        "valor": 3,
+        "valor": 6,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 3.0
+          "valor_double": 6.0
         }
       },
       "meta": {
@@ -37,29 +37,29 @@
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 11,
+      "linha": 9,
       "tipo": "int",
       "operador": "-",
       "esquerda": {
         "no": "LiteralInteiro",
-        "linha": 11,
+        "linha": 9,
         "tipo": "int",
-        "valor": 10,
+        "valor": 48,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 10.0
+          "valor_double": 48.0
         }
       },
       "direita": {
         "no": "LiteralInteiro",
-        "linha": 11,
+        "linha": 9,
         "tipo": "int",
-        "valor": 3,
+        "valor": 6,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 3.0
+          "valor_double": 6.0
         }
       },
       "meta": {
@@ -70,29 +70,29 @@
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 12,
+      "linha": 10,
       "tipo": "int",
       "operador": "*",
       "esquerda": {
         "no": "LiteralInteiro",
-        "linha": 12,
+        "linha": 10,
         "tipo": "int",
-        "valor": 4,
+        "valor": 7,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 4.0
+          "valor_double": 7.0
         }
       },
       "direita": {
         "no": "LiteralInteiro",
-        "linha": 12,
+        "linha": 10,
         "tipo": "int",
-        "valor": 3,
+        "valor": 9,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 3.0
+          "valor_double": 9.0
         }
       },
       "meta": {
@@ -103,29 +103,29 @@
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 13,
+      "linha": 11,
       "tipo": "int",
       "operador": "/",
       "esquerda": {
         "no": "LiteralInteiro",
-        "linha": 13,
+        "linha": 11,
         "tipo": "int",
-        "valor": 10,
+        "valor": 48,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 10.0
+          "valor_double": 48.0
         }
       },
       "direita": {
         "no": "LiteralInteiro",
-        "linha": 13,
+        "linha": 11,
         "tipo": "int",
-        "valor": 3,
+        "valor": 7,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 3.0
+          "valor_double": 7.0
         }
       },
       "meta": {
@@ -136,29 +136,29 @@
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 14,
+      "linha": 12,
       "tipo": "int",
       "operador": "%",
       "esquerda": {
         "no": "LiteralInteiro",
-        "linha": 14,
+        "linha": 12,
         "tipo": "int",
-        "valor": 10,
+        "valor": 48,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 10.0
+          "valor_double": 48.0
         }
       },
       "direita": {
         "no": "LiteralInteiro",
-        "linha": 14,
+        "linha": 12,
         "tipo": "int",
-        "valor": 3,
+        "valor": 7,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 3.0
+          "valor_double": 7.0
         }
       },
       "meta": {
@@ -169,29 +169,29 @@
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 15,
+      "linha": 13,
       "tipo": "int",
       "operador": "^",
       "esquerda": {
         "no": "LiteralInteiro",
-        "linha": 15,
+        "linha": 13,
         "tipo": "int",
-        "valor": 2,
+        "valor": 3,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 2.0
+          "valor_double": 3.0
         }
       },
       "direita": {
         "no": "LiteralInteiro",
-        "linha": 15,
+        "linha": 13,
         "tipo": "int",
-        "valor": 5,
+        "valor": 4,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 5.0
+          "valor_double": 4.0
         }
       },
       "meta": {
@@ -202,29 +202,29 @@
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 18,
+      "linha": 16,
       "tipo": "real",
       "operador": "|",
       "esquerda": {
         "no": "LiteralReal",
-        "linha": 18,
+        "linha": 16,
         "tipo": "real",
-        "valor": 7.5,
+        "valor": 18.0,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 7.5
+          "valor_double": 18.0
         }
       },
       "direita": {
         "no": "LiteralReal",
-        "linha": 18,
+        "linha": 16,
         "tipo": "real",
-        "valor": 2.5,
+        "valor": 4.0,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 2.5
+          "valor_double": 4.0
         }
       },
       "meta": {
@@ -235,17 +235,50 @@
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 19,
+      "linha": 17,
       "tipo": "real",
-      "operador": "+",
+      "operador": "|",
       "esquerda": {
         "no": "OperacaoBinaria",
-        "linha": 19,
+        "linha": 17,
+        "tipo": "real",
+        "operador": "+",
+        "esquerda": {
+          "no": "LiteralReal",
+          "linha": 17,
+          "tipo": "real",
+          "valor": 2.0,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 2.0
+          }
+        },
+        "direita": {
+          "no": "LiteralReal",
+          "linha": 17,
+          "tipo": "real",
+          "valor": 3.5,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 3.5
+          }
+        },
+        "meta": {
+          "categoria": "aritmetico",
+          "registrador": "d0",
+          "operador": "+"
+        }
+      },
+      "direita": {
+        "no": "OperacaoBinaria",
+        "linha": 17,
         "tipo": "real",
         "operador": "*",
         "esquerda": {
           "no": "LiteralReal",
-          "linha": 19,
+          "linha": 17,
           "tipo": "real",
           "valor": 1.5,
           "meta": {
@@ -256,7 +289,7 @@
         },
         "direita": {
           "no": "LiteralReal",
-          "linha": 19,
+          "linha": 17,
           "tipo": "real",
           "valor": 2.0,
           "meta": {
@@ -271,96 +304,69 @@
           "operador": "*"
         }
       },
-      "direita": {
-        "no": "LiteralReal",
-        "linha": 19,
-        "tipo": "real",
-        "valor": 3.0,
-        "meta": {
-          "categoria": "literal",
-          "registrador": "d0",
-          "valor_double": 3.0
-        }
-      },
       "meta": {
         "categoria": "aritmetico",
         "registrador": "d0",
-        "operador": "+"
+        "operador": "|"
       }
     },
     {
       "no": "EscritaMemoria",
-      "linha": 22,
+      "linha": 20,
       "tipo": "int",
-      "nome": "CONT",
+      "nome": "PECAS",
       "valor": {
         "no": "LiteralInteiro",
-        "linha": 22,
+        "linha": 20,
         "tipo": "int",
-        "valor": 5,
+        "valor": 40,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 5.0
+          "valor_double": 40.0
         }
       },
       "meta": {
         "categoria": "escrita",
         "registrador": "d0",
-        "rotulo_mem": "mem_CONT",
+        "rotulo_mem": "mem_PECAS",
         "simbolo": {
-          "nome": "CONT",
+          "nome": "PECAS",
           "tipo": "int",
-          "linha_definicao": 22
-        }
-      }
-    },
-    {
-      "no": "LeituraMemoria",
-      "linha": 23,
-      "tipo": "int",
-      "nome": "CONT",
-      "meta": {
-        "categoria": "leitura",
-        "registrador": "d0",
-        "rotulo_mem": "mem_CONT",
-        "simbolo": {
-          "nome": "CONT",
-          "tipo": "int",
-          "linha_definicao": 22
+          "linha_definicao": 20
         }
       }
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 24,
+      "linha": 21,
       "tipo": "int",
       "operador": "*",
       "esquerda": {
         "no": "LeituraMemoria",
-        "linha": 24,
+        "linha": 21,
         "tipo": "int",
-        "nome": "CONT",
+        "nome": "PECAS",
         "meta": {
           "categoria": "leitura",
           "registrador": "d0",
-          "rotulo_mem": "mem_CONT",
+          "rotulo_mem": "mem_PECAS",
           "simbolo": {
-            "nome": "CONT",
+            "nome": "PECAS",
             "tipo": "int",
-            "linha_definicao": 22
+            "linha_definicao": 20
           }
         }
       },
       "direita": {
         "no": "LiteralInteiro",
-        "linha": 24,
+        "linha": 21,
         "tipo": "int",
-        "valor": 2,
+        "valor": 6,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 2.0
+          "valor_double": 6.0
         }
       },
       "meta": {
@@ -371,7 +377,7 @@
     },
     {
       "no": "ResultadoAnterior",
-      "linha": 25,
+      "linha": 22,
       "tipo": "int",
       "n": 2,
       "meta": {
@@ -382,104 +388,71 @@
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 28,
+      "linha": 25,
       "tipo": "bool",
-      "operador": ">",
+      "operador": ">=",
       "esquerda": {
         "no": "LeituraMemoria",
-        "linha": 28,
+        "linha": 25,
         "tipo": "int",
-        "nome": "CONT",
+        "nome": "PECAS",
         "meta": {
           "categoria": "leitura",
           "registrador": "d0",
-          "rotulo_mem": "mem_CONT",
+          "rotulo_mem": "mem_PECAS",
           "simbolo": {
-            "nome": "CONT",
+            "nome": "PECAS",
             "tipo": "int",
-            "linha_definicao": 22
+            "linha_definicao": 20
           }
         }
       },
       "direita": {
         "no": "LiteralInteiro",
-        "linha": 28,
+        "linha": 25,
         "tipo": "int",
-        "valor": 0,
+        "valor": 30,
         "meta": {
           "categoria": "literal",
           "registrador": "d0",
-          "valor_double": 0.0
+          "valor_double": 30.0
         }
       },
       "meta": {
         "categoria": "relacional",
         "registrador": "d0",
-        "operador": ">"
+        "operador": ">="
       }
     },
     {
       "no": "OperacaoBinaria",
-      "linha": 29,
-      "tipo": "bool",
-      "operador": "OR",
-      "esquerda": {
-        "no": "LiteralBool",
-        "linha": 29,
-        "tipo": "bool",
-        "valor": true,
-        "meta": {
-          "categoria": "literal",
-          "registrador": "d0",
-          "valor_double": 1.0
-        }
-      },
-      "direita": {
-        "no": "LiteralBool",
-        "linha": 29,
-        "tipo": "bool",
-        "valor": false,
-        "meta": {
-          "categoria": "literal",
-          "registrador": "d0",
-          "valor_double": 0.0
-        }
-      },
-      "meta": {
-        "categoria": "logico",
-        "registrador": "d0",
-        "operador": "OR"
-      }
-    },
-    {
-      "no": "OperacaoBinaria",
-      "linha": 30,
+      "linha": 26,
       "tipo": "bool",
       "operador": "AND",
       "esquerda": {
         "no": "OperacaoBinaria",
-        "linha": 30,
+        "linha": 26,
         "tipo": "bool",
         "operador": ">",
         "esquerda": {
           "no": "LeituraMemoria",
-          "linha": 30,
+          "linha": 26,
           "tipo": "int",
-          "nome": "CONT",
+          "nome": "PECAS",
           "meta": {
             "categoria": "leitura",
             "registrador": "d0",
-            "rotulo_mem": "mem_CONT",
+            "rotulo_mem": "mem_PECAS",
             "simbolo": {
-              "nome": "CONT",
+              "nome": "PECAS",
               "tipo": "int",
-              "linha_definicao": 22
+              "linha_definicao": 20
             }
           }
         },
         "direita": {
           "no": "LiteralInteiro",
-          "linha": 30,
+          "linha": 26,
           "tipo": "int",
           "valor": 0,
           "meta": {
@@ -496,28 +469,28 @@
       },
       "direita": {
         "no": "OperacaoBinaria",
-        "linha": 30,
+        "linha": 26,
         "tipo": "bool",
-        "operador": "<",
+        "operador": "<=",
         "esquerda": {
           "no": "LeituraMemoria",
-          "linha": 30,
+          "linha": 26,
           "tipo": "int",
-          "nome": "CONT",
+          "nome": "PECAS",
           "meta": {
             "categoria": "leitura",
             "registrador": "d0",
-            "rotulo_mem": "mem_CONT",
+            "rotulo_mem": "mem_PECAS",
             "simbolo": {
-              "nome": "CONT",
+              "nome": "PECAS",
               "tipo": "int",
-              "linha_definicao": 22
+              "linha_definicao": 20
             }
           }
         },
         "direita": {
           "no": "LiteralInteiro",
-          "linha": 30,
+          "linha": 26,
           "tipo": "int",
           "valor": 100,
           "meta": {
@@ -529,7 +502,7 @@
         "meta": {
           "categoria": "relacional",
           "registrador": "d0",
-          "operador": "<"
+          "operador": "<="
         }
       },
       "meta": {
@@ -540,34 +513,34 @@
     },
     {
       "no": "OperacaoUnaria",
-      "linha": 31,
+      "linha": 27,
       "tipo": "bool",
       "operador": "NOT",
       "operando": {
         "no": "OperacaoBinaria",
-        "linha": 31,
+        "linha": 27,
         "tipo": "bool",
         "operador": "OR",
         "esquerda": {
           "no": "LiteralBool",
-          "linha": 31,
-          "tipo": "bool",
-          "valor": true,
-          "meta": {
-            "categoria": "literal",
-            "registrador": "d0",
-            "valor_double": 1.0
-          }
-        },
-        "direita": {
-          "no": "LiteralBool",
-          "linha": 31,
+          "linha": 27,
           "tipo": "bool",
           "valor": false,
           "meta": {
             "categoria": "literal",
             "registrador": "d0",
             "valor_double": 0.0
+          }
+        },
+        "direita": {
+          "no": "LiteralBool",
+          "linha": 27,
+          "tipo": "bool",
+          "valor": true,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 1.0
           }
         },
         "meta": {
@@ -583,39 +556,198 @@
       }
     },
     {
-      "no": "Se",
-      "linha": 34,
-      "tipo": "int",
-      "condicao": {
+      "no": "EscritaMemoria",
+      "linha": 28,
+      "tipo": "bool",
+      "nome": "ALERTA",
+      "valor": {
         "no": "OperacaoBinaria",
-        "linha": 34,
+        "linha": 28,
         "tipo": "bool",
-        "operador": "==",
+        "operador": ">",
         "esquerda": {
           "no": "LeituraMemoria",
-          "linha": 34,
+          "linha": 28,
           "tipo": "int",
-          "nome": "CONT",
+          "nome": "PECAS",
           "meta": {
             "categoria": "leitura",
             "registrador": "d0",
-            "rotulo_mem": "mem_CONT",
+            "rotulo_mem": "mem_PECAS",
             "simbolo": {
-              "nome": "CONT",
+              "nome": "PECAS",
               "tipo": "int",
-              "linha_definicao": 22
+              "linha_definicao": 20
             }
           }
         },
         "direita": {
           "no": "LiteralInteiro",
-          "linha": 34,
+          "linha": 28,
           "tipo": "int",
-          "valor": 0,
+          "valor": 100,
           "meta": {
             "categoria": "literal",
             "registrador": "d0",
-            "valor_double": 0.0
+            "valor_double": 100.0
+          }
+        },
+        "meta": {
+          "categoria": "relacional",
+          "registrador": "d0",
+          "operador": ">"
+        }
+      },
+      "meta": {
+        "categoria": "escrita",
+        "registrador": "d0",
+        "rotulo_mem": "mem_ALERTA",
+        "simbolo": {
+          "nome": "ALERTA",
+          "tipo": "bool",
+          "linha_definicao": 28
+        }
+      }
+    },
+    {
+      "no": "Enquanto",
+      "linha": 31,
+      "tipo": "unit",
+      "condicao": {
+        "no": "OperacaoBinaria",
+        "linha": 31,
+        "tipo": "bool",
+        "operador": "<",
+        "esquerda": {
+          "no": "LeituraMemoria",
+          "linha": 31,
+          "tipo": "int",
+          "nome": "PECAS",
+          "meta": {
+            "categoria": "leitura",
+            "registrador": "d0",
+            "rotulo_mem": "mem_PECAS",
+            "simbolo": {
+              "nome": "PECAS",
+              "tipo": "int",
+              "linha_definicao": 20
+            }
+          }
+        },
+        "direita": {
+          "no": "LiteralInteiro",
+          "linha": 31,
+          "tipo": "int",
+          "valor": 80,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 80.0
+          }
+        },
+        "meta": {
+          "categoria": "relacional",
+          "registrador": "d0",
+          "operador": "<"
+        }
+      },
+      "corpo": {
+        "no": "EscritaMemoria",
+        "linha": 31,
+        "tipo": "int",
+        "nome": "PECAS",
+        "valor": {
+          "no": "OperacaoBinaria",
+          "linha": 31,
+          "tipo": "int",
+          "operador": "+",
+          "esquerda": {
+            "no": "LeituraMemoria",
+            "linha": 31,
+            "tipo": "int",
+            "nome": "PECAS",
+            "meta": {
+              "categoria": "leitura",
+              "registrador": "d0",
+              "rotulo_mem": "mem_PECAS",
+              "simbolo": {
+                "nome": "PECAS",
+                "tipo": "int",
+                "linha_definicao": 20
+              }
+            }
+          },
+          "direita": {
+            "no": "LiteralInteiro",
+            "linha": 31,
+            "tipo": "int",
+            "valor": 5,
+            "meta": {
+              "categoria": "literal",
+              "registrador": "d0",
+              "valor_double": 5.0
+            }
+          },
+          "meta": {
+            "categoria": "aritmetico",
+            "registrador": "d0",
+            "operador": "+"
+          }
+        },
+        "meta": {
+          "categoria": "escrita",
+          "registrador": "d0",
+          "rotulo_mem": "mem_PECAS",
+          "simbolo": {
+            "nome": "PECAS",
+            "tipo": "int",
+            "linha_definicao": 20
+          }
+        }
+      },
+      "meta": {
+        "categoria": "controle_enquanto",
+        "registrador": "d0",
+        "rotulos": {
+          "inicio": "L_while_ini_1",
+          "fim": "L_while_fim_1"
+        }
+      }
+    },
+    {
+      "no": "Se",
+      "linha": 32,
+      "tipo": "int",
+      "condicao": {
+        "no": "OperacaoBinaria",
+        "linha": 32,
+        "tipo": "bool",
+        "operador": "==",
+        "esquerda": {
+          "no": "LeituraMemoria",
+          "linha": 32,
+          "tipo": "int",
+          "nome": "PECAS",
+          "meta": {
+            "categoria": "leitura",
+            "registrador": "d0",
+            "rotulo_mem": "mem_PECAS",
+            "simbolo": {
+              "nome": "PECAS",
+              "tipo": "int",
+              "linha_definicao": 20
+            }
+          }
+        },
+        "direita": {
+          "no": "LiteralInteiro",
+          "linha": 32,
+          "tipo": "int",
+          "valor": 50,
+          "meta": {
+            "categoria": "literal",
+            "registrador": "d0",
+            "valor_double": 50.0
           }
         },
         "meta": {
@@ -626,28 +758,28 @@
       },
       "entao": {
         "no": "EscritaMemoria",
-        "linha": 34,
+        "linha": 32,
         "tipo": "int",
-        "nome": "RESULT",
+        "nome": "FALTA",
         "valor": {
           "no": "LiteralInteiro",
-          "linha": 34,
+          "linha": 32,
           "tipo": "int",
-          "valor": 42,
+          "valor": 999,
           "meta": {
             "categoria": "literal",
             "registrador": "d0",
-            "valor_double": 42.0
+            "valor_double": 999.0
           }
         },
         "meta": {
           "categoria": "escrita",
           "registrador": "d0",
-          "rotulo_mem": "mem_RESULT",
+          "rotulo_mem": "mem_FALTA",
           "simbolo": {
-            "nome": "RESULT",
+            "nome": "FALTA",
             "tipo": "int",
-            "linha_definicao": 34
+            "linha_definicao": 32
           }
         }
       },
@@ -655,60 +787,38 @@
         "categoria": "controle_se",
         "registrador": "d0",
         "rotulos": {
-          "fim": "L_if_fim_1"
+          "fim": "L_if_fim_2"
         }
       }
     },
     {
       "no": "SeSenao",
-      "linha": 35,
+      "linha": 33,
       "tipo": "int",
       "condicao": {
-        "no": "OperacaoBinaria",
-        "linha": 35,
+        "no": "LeituraMemoria",
+        "linha": 33,
         "tipo": "bool",
-        "operador": ">=",
-        "esquerda": {
-          "no": "LeituraMemoria",
-          "linha": 35,
-          "tipo": "int",
-          "nome": "CONT",
-          "meta": {
-            "categoria": "leitura",
-            "registrador": "d0",
-            "rotulo_mem": "mem_CONT",
-            "simbolo": {
-              "nome": "CONT",
-              "tipo": "int",
-              "linha_definicao": 22
-            }
-          }
-        },
-        "direita": {
-          "no": "LiteralInteiro",
-          "linha": 35,
-          "tipo": "int",
-          "valor": 5,
-          "meta": {
-            "categoria": "literal",
-            "registrador": "d0",
-            "valor_double": 5.0
-          }
-        },
+        "nome": "ALERTA",
         "meta": {
-          "categoria": "relacional",
+          "categoria": "leitura",
           "registrador": "d0",
-          "operador": ">="
+          "rotulo_mem": "mem_ALERTA",
+          "simbolo": {
+            "nome": "ALERTA",
+            "tipo": "bool",
+            "linha_definicao": 28
+          }
         }
       },
       "entao": {
         "no": "EscritaMemoria",
-        "linha": 35,
+        "linha": 33,
         "tipo": "int",
-        "nome": "FLAG",
+        "nome": "STATUS",
         "valor": {
           "no": "LiteralInteiro",
-          "linha": 35,
+          "linha": 33,
           "tipo": "int",
           "valor": 1,
           "meta": {
@@ -720,22 +830,22 @@
         "meta": {
           "categoria": "escrita",
           "registrador": "d0",
-          "rotulo_mem": "mem_FLAG",
+          "rotulo_mem": "mem_STATUS",
           "simbolo": {
-            "nome": "FLAG",
+            "nome": "STATUS",
             "tipo": "int",
-            "linha_definicao": 35
+            "linha_definicao": 33
           }
         }
       },
       "senao": {
         "no": "EscritaMemoria",
-        "linha": 35,
+        "linha": 33,
         "tipo": "int",
-        "nome": "FLAG",
+        "nome": "STATUS",
         "valor": {
           "no": "LiteralInteiro",
-          "linha": 35,
+          "linha": 33,
           "tipo": "int",
           "valor": 0,
           "meta": {
@@ -747,11 +857,11 @@
         "meta": {
           "categoria": "escrita",
           "registrador": "d0",
-          "rotulo_mem": "mem_FLAG",
+          "rotulo_mem": "mem_STATUS",
           "simbolo": {
-            "nome": "FLAG",
+            "nome": "STATUS",
             "tipo": "int",
-            "linha_definicao": 35
+            "linha_definicao": 33
           }
         }
       },
@@ -759,123 +869,19 @@
         "categoria": "controle_se_senao",
         "registrador": "d0",
         "rotulos": {
-          "senao": "L_else_2",
-          "fim": "L_ifelse_fim_2"
-        }
-      }
-    },
-    {
-      "no": "Enquanto",
-      "linha": 36,
-      "tipo": "unit",
-      "condicao": {
-        "no": "OperacaoBinaria",
-        "linha": 36,
-        "tipo": "bool",
-        "operador": ">",
-        "esquerda": {
-          "no": "LeituraMemoria",
-          "linha": 36,
-          "tipo": "int",
-          "nome": "CONT",
-          "meta": {
-            "categoria": "leitura",
-            "registrador": "d0",
-            "rotulo_mem": "mem_CONT",
-            "simbolo": {
-              "nome": "CONT",
-              "tipo": "int",
-              "linha_definicao": 22
-            }
-          }
-        },
-        "direita": {
-          "no": "LiteralInteiro",
-          "linha": 36,
-          "tipo": "int",
-          "valor": 0,
-          "meta": {
-            "categoria": "literal",
-            "registrador": "d0",
-            "valor_double": 0.0
-          }
-        },
-        "meta": {
-          "categoria": "relacional",
-          "registrador": "d0",
-          "operador": ">"
-        }
-      },
-      "corpo": {
-        "no": "EscritaMemoria",
-        "linha": 36,
-        "tipo": "int",
-        "nome": "CONT",
-        "valor": {
-          "no": "OperacaoBinaria",
-          "linha": 36,
-          "tipo": "int",
-          "operador": "-",
-          "esquerda": {
-            "no": "LeituraMemoria",
-            "linha": 36,
-            "tipo": "int",
-            "nome": "CONT",
-            "meta": {
-              "categoria": "leitura",
-              "registrador": "d0",
-              "rotulo_mem": "mem_CONT",
-              "simbolo": {
-                "nome": "CONT",
-                "tipo": "int",
-                "linha_definicao": 22
-              }
-            }
-          },
-          "direita": {
-            "no": "LiteralInteiro",
-            "linha": 36,
-            "tipo": "int",
-            "valor": 1,
-            "meta": {
-              "categoria": "literal",
-              "registrador": "d0",
-              "valor_double": 1.0
-            }
-          },
-          "meta": {
-            "categoria": "aritmetico",
-            "registrador": "d0",
-            "operador": "-"
-          }
-        },
-        "meta": {
-          "categoria": "escrita",
-          "registrador": "d0",
-          "rotulo_mem": "mem_CONT",
-          "simbolo": {
-            "nome": "CONT",
-            "tipo": "int",
-            "linha_definicao": 22
-          }
-        }
-      },
-      "meta": {
-        "categoria": "controle_enquanto",
-        "registrador": "d0",
-        "rotulos": {
-          "inicio": "L_while_ini_3",
-          "fim": "L_while_fim_3"
+          "senao": "L_else_3",
+          "fim": "L_ifelse_fim_3"
         }
       }
     }
   ],
   "meta": {
     "memorias": [
-      "CONT",
-      "FLAG",
-      "RESULT"
+      "ALERTA",
+      "FALTA",
+      "PECAS",
+      "STATUS"
     ],
-    "n_instrucoes": 19
+    "n_instrucoes": 18
   }
 }
