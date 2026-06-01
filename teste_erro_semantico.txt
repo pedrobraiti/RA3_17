@@ -1,16 +1,16 @@
-*{ Teste de ERRO SEMANTICO. O programa e lexicamente e sintaticamente valido,
-   mas viola regras de tipos / declaracoes. O analisador deve listar TODOS os
-   erros (com a linha) e NAO gerar Assembly. }*
+*{ Teste de ERRO SEMANTICO. O programa e lexica e sintaticamente valido, mas
+   viola regras de tipos / declaracoes. O analisador deve listar TODOS os
+   erros (com a linha) numa unica passada e NAO gerar Assembly. }*
 (START)
-((NAODECL) 1 +)                  *{ uso de variavel antes de declarar }*
-(10 X)                           *{ X : int }*
-(2.5 X)                          *{ redefinicao incompativel: int -> real }*
-(1 2.5 +)                        *{ aritmetica sem promocao: int + real }*
-(10 3 |)                         *{ '|' (divisao real) exige reais }*
-(10.0 3.0 /)                     *{ '/' (divisao inteira) exige inteiros }*
-((1 2 +) (3 4 +) IF)             *{ condicao do IF nao e bool }*
-((5 1 +) (1 0 -) WHILE)          *{ condicao do WHILE nao e bool }*
-((1 2 <) (3 4 +) (3.0 4.0 +) IFELSE)   *{ ramos do IFELSE divergentes }*
-(TRUE 1 AND)                     *{ AND exige dois bool, recebeu bool e int }*
-(99 RES)                         *{ (N RES) fora de faixa }*
+((SEMVALOR) 1 +)                       *{ uso de variavel antes de declarar }*
+(7 CODIGO)                             *{ define CODIGO : int }*
+(1.5 CODIGO)                           *{ redefinicao incompativel: int -> real }*
+(3 4.5 +)                              *{ aritmetica sem promocao: int + real }*
+(8 2 |)                                *{ '|' (divisao real) exige reais }*
+(9.0 2.0 /)                            *{ '/' (divisao inteira) exige inteiros }*
+((3 5 +) (1 2 +) IF)                   *{ condicao do IF nao e bool }*
+((2 1 +) (4 0 -) WHILE)                *{ condicao do WHILE nao e bool }*
+((4 2 >) (1 0 +) (2.0 1.0 +) IFELSE)   *{ ramos do IFELSE divergentes (int/real) }*
+(FALSE 2 AND)                          *{ AND exige dois bool, recebeu bool e int }*
+(50 RES)                               *{ (N RES) fora de faixa }*
 (END)

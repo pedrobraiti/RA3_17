@@ -1,21 +1,33 @@
-*{ Teste 2 - valido. Enfase em numeros reais e num laco com contador real,
-   mantendo as operacoes inteiras (/ % ^) sobre inteiros (tipos fortes). }*
+*{ Teste 2 - leitura de sensores, semanticamente valido. Foco em ponto
+   flutuante (real), com um bloco inteiro a parte para os operadores que
+   exigem inteiros (/ % ^). Memorias real e int, historico, logica e
+   as tres estruturas de controle. }*
 (START)
-(100 7 /)                    *{ divisao inteira -> 14 }*
-(100 7 %)                    *{ resto -> 2 }*
-(3 4 ^)                      *{ potencia -> 81 }*
-(2 3 +)                      *{ 5 : int }*
-(9 4 -)                      *{ 5 }*
-(6 7 *)                      *{ 42 }*
-(10.0 4.0 |)                 *{ divisao real -> 2.5 }*
-((2.5 2.0 *) (1.0 3.0 +) |)  *{ aninhamento real -> 1.25 }*
-(3.0 SALDO)                  *{ define SALDO : real }*
-((SALDO) 1.5 +)              *{ usa SALDO (real) }*
-(1 RES)                      *{ historico: instrucao anterior }*
-*{ laco com contador REAL: decrementa SALDO ate <= 0 }*
-(((SALDO) 0.0 >) (((SALDO) 1.0 -) SALDO) WHILE)
-*{ decisao com logica booleana composta }*
-(((100 7 %) 0 >) (TRUE FALSE OR) AND)
-(((SALDO) 0.0 <=) (1 PRONTO) (0 PRONTO) IFELSE)
-(((2 3 +) 4 ==) (1 IGUAL) IF)
+
+*{ ponto flutuante }*
+(12.5 7.5 +)                  *{ 20.0 : real }*
+(9.0 2.5 -)                   *{ 6.5 }*
+(1.5 4.0 *)                   *{ 6.0 }*
+(20.0 8.0 |)                  *{ 2.5 : divisao real }*
+((6.0 2.0 +) (10.0 5.0 -) |)  *{ aninhamento real }*
+
+*{ bloco inteiro: / % ^ operam apenas sobre inteiros }*
+(29 4 /)                      *{ 7 }*
+(29 4 %)                      *{ 1 }*
+(2 6 ^)                       *{ 64 }*
+((29 4 /) (29 4 %) +)         *{ aninhamento inteiro }*
+
+*{ memoria real e historico }*
+(36.6 TEMP)                   *{ define TEMP : real }*
+((TEMP) 0.4 +)                *{ usa TEMP }*
+(1 RES)                       *{ instrucao anterior }*
+
+*{ logica booleana e variavel booleana }*
+(((TEMP) 37.0 <) (TRUE FALSE OR) AND)   *{ conjuncao -> bool }*
+(((TEMP) 35.0 >=) ESTAVEL)              *{ ESTAVEL : bool }*
+
+*{ controle: laco real decrescente, decisao dupla e simples }*
+(((TEMP) 30.0 >) (((TEMP) 1.5 -) TEMP) WHILE)      *{ decrementa 1.5 }*
+(((TEMP) 30.0 <=) (1 PRONTO) (0 PRONTO) IFELSE)    *{ ramos int }*
+(((ESTAVEL) NOT) (5 ALARME) IF)                    *{ cond bool negada }*
 (END)

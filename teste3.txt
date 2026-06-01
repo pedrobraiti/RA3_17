@@ -1,24 +1,27 @@
-*{ Teste 3 - valido. Combina comentarios em todas as posicoes, variaveis
-   booleanas, aninhamento crescente e todas as estruturas de controle. }*
+*{ Teste 3 - pontuacao de um jogo, semanticamente valido. Combina
+   comentarios em varias posicoes (inclusive entre tokens), variavel
+   booleana, aninhamento crescente e todas as estruturas de controle. }*
 (START)
-*{ aritmetica e tipos basicos }*
-(8 *{ entre tokens }* 2 +)        *{ 10 }*
-(8 2 -)                            *{ 6 }*
-(8 2 *)                            *{ 16 }*
-(17 5 /)                           *{ 3 }*
-(17 5 %)                           *{ 2 }*
-(2 8 ^)                            *{ 256 }*
-((9.0 2.0 |) (3.0 1.0 -) *)        *{ real aninhado -> 4.5*2.0 = 9.0 }*
-*{ variavel booleana: ATIVO recebe um bool }*
-((10 5 >) ATIVO)                   *{ ATIVO : bool }*
-((ATIVO) NOT)                      *{ le e nega o bool }*
-(((ATIVO) (TRUE) AND) (FALSE) OR)  *{ logica aninhada com a variavel bool }*
-(7 ACUM)                           *{ ACUM : int }*
-*{ laco: acumula enquanto ACUM positivo }*
-(((ACUM) 0 >) (((ACUM) 2 -) ACUM) WHILE)
-*{ decisao simples e decisao com dois ramos }*
-(((ACUM) 0 <=) ((ACUM) 1 +) IF)
-((ATIVO) (1 X) (2 X) IFELSE)
-(2 RES)                            *{ historico }*
-((ACUM))                           *{ leitura de memoria (MEM) }*
+
+*{ aritmetica inteira e real }*
+(15 *{ base }* 5 +)           *{ 20 : int }*
+(15 5 -)                      *{ 10 }*
+(6 4 *)                       *{ 24 }*
+(45 6 /)                      *{ 7 }*
+(45 6 %)                      *{ 3 }*
+(5 3 ^)                       *{ 125 }*
+((8.0 2.0 |) (4.5 1.5 +) *)   *{ real aninhado }*
+
+*{ variavel booleana e logica com a variavel }*
+((20 12 >) VIVO)              *{ VIVO : bool }*
+((VIVO) NOT)                  *{ le e nega }*
+(((VIVO) (TRUE) AND) (FALSE) OR)   *{ logica aninhada }*
+
+*{ memoria inteira, laco e as duas decisoes }*
+(24 PONTOS)                   *{ PONTOS : int }*
+(((PONTOS) 0 >) (((PONTOS) 4 -) PONTOS) WHILE)   *{ decrementa de 4 }*
+(((PONTOS) 0 <=) ((PONTOS) 10 +) IF)             *{ decisao simples }*
+((VIVO) (1 NIVEL) (2 NIVEL) IFELSE)              *{ ramos int }*
+(3 RES)                       *{ historico }*
+((PONTOS))                    *{ leitura de memoria (MEM) }*
 (END)
