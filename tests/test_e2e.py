@@ -21,6 +21,8 @@ def roda(nome: str, tmp_path) -> int:
 def test_arquivos_validos_geram_assembly(nome, tmp_path):
     assert roda(nome, tmp_path) == 0
     asm = (tmp_path / "saida" / "ultima_execucao.s").read_text(encoding="utf-8")
+    assert asm.startswith(".global _start")
+    assert ".syntax" not in asm  # diretiva rejeitada pelo montador do Cpulator
     assert "_start:" in asm
     assert ".data" in asm
     assert "__exibir_hex" in asm
