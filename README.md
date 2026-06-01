@@ -147,7 +147,7 @@ As expressões podem ser **aninhadas sem limite**:
 
 Os tipos são **estáticos e fortes** e **não há promoção implícita**:
 `(1 2.5 +)` é **erro** — não soma `1.0 + 2.5`. As regras formais (em cálculo
-de sequentes) estão em [`regras_tipos.md`](regras_tipos.md).
+de sequentes) estão em [`regras_semanticas.md`](regras_semanticas.md).
 
 ## 5. Definição e uso de variáveis
 
@@ -210,8 +210,8 @@ RA3_17/
 │   └── relatorios.py             serialização dos artefatos
 ├── tests/                        suíte pytest (léxico, sintático, semântico, e2e)
 ├── teste*.txt                    arquivos de teste
-├── gramatica_atribuida.md        gramática EBNF + ações semânticas
-├── regras_tipos.md               sistema de tipos (cálculo de sequentes)
+├── gramatica_ebnf.md             gramática EBNF + ações semânticas
+├── regras_semanticas.md          sistema de tipos (cálculo de sequentes)
 └── saida/                        artefatos da última execução
 ```
 
@@ -255,9 +255,9 @@ execução. O Assembly nunca é gerado quando há qualquer erro.
 
 ## 10. Documentação complementar
 
-* [`gramatica_atribuida.md`](gramatica_atribuida.md) — gramática EBNF e ações
+* [`gramatica_ebnf.md`](gramatica_ebnf.md) — gramática EBNF e ações
   semânticas (atributos e atualização da tabela de símbolos).
-* [`regras_tipos.md`](regras_tipos.md) — sistema de tipos em cálculo de
+* [`regras_semanticas.md`](regras_semanticas.md) — sistema de tipos em cálculo de
   sequentes.
 * [`saida/gramatica_ll1.md`](saida/gramatica_ll1.md) — FIRST, FOLLOW e tabela
   LL(1) da última execução.

@@ -1,6 +1,6 @@
 """Verificação de tipos — anota cada nó com seu tipo e coleta erros.
 
-As regras formais estão em ``regras_tipos.md`` (cálculo de sequentes). A
+As regras formais estão em ``regras_semanticas.md`` (cálculo de sequentes). A
 decisão de tipo de cada operador vem de ``compilador.dominio.tipos`` (o mesmo
 módulo usado pela inferência da tabela de símbolos), de modo que as duas
 etapas são sempre coerentes. **Não há promoção implícita** entre ``int`` e
