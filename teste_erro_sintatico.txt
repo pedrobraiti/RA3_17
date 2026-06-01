@@ -1,11 +1,10 @@
-*{ Teste de ERRO SINTATICO. A estrutura pos-fixada esta violada. O parser
-   deve apontar a linha/coluna e o que era esperado. Deixe apenas uma linha
-   de erro ativa por vez para isolar a mensagem. }*
+*{ Teste de ERRO SINTATICO. Os tokens sao validos (passam no AFD), mas a
+   estrutura pos-fixada esta violada e o parser deve apontar linha/coluna e o
+   que era esperado. Deixe apenas uma linha de erro ativa por vez. }*
 (START)
-(+ 3 2)             *{ operador antes dos operandos (nao e RPN) }*
-*{ (3 2 + 5)        operandos/operadores a mais }*
-*{ (10 3            parentese nao fechado }*
-*{ ((1 2 +)         parentese de mais sem fechar }*
-*{ (1 RES MEM)      forma invalida apos RES }*
-*{ (3 2 IFELSE)     IFELSE exige tres operandos }*
+(10 5 + 2)          *{ operando sobrando depois do operador }*
+*{ (* 4 2)          operador antes dos operandos (nao e RPN) }*
+*{ (6 4             parentese nao fechado }*
+*{ (2 WHILE)        WHILE exige condicao e corpo }*
+*{ (1 RES MEM)      forma invalida depois de RES }*
 (END)

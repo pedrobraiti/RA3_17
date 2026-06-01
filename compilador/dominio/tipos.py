@@ -3,7 +3,7 @@
 Os tipos são **estáticos e fortes**: o tipo de cada artefato é fixado no
 momento de sua definição e operações entre tipos incompatíveis são erros
 semânticos. **Não há promoção implícita** entre ``int`` e ``real`` — essa
-decisão está formalizada em ``regras_tipos.md`` (cálculo de sequentes) e é
+decisão está formalizada em ``regras_semanticas.md`` (cálculo de sequentes) e é
 aplicada por um único ponto de verdade: :func:`tipo_de_operacao`.
 """
 
